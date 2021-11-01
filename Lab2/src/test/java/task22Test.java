@@ -18,7 +18,7 @@ class task22Test {
     @Test
     void createArray() {
         int [] expected = task22.createArray(arguments);
-        assertEquals(Arrays.toString(expected), Arrays.toString(arr));
+        assertArrayEquals(expected, arr);
     }
 
     @Test
@@ -32,6 +32,6 @@ class task22Test {
     void createArrayB() {
         int[] actual = new int[]{0, 3, 2, 1, 4};
         int[] expected = task22.createArrayB(arr);
-        assertEquals(Arrays.toString(expected), Arrays.toString(actual));
+        assertArrayEquals(expected, actual);
     }
 }
